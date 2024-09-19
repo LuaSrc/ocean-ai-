@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ocean Ai</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet if needed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5); /* Transparent background */
+            overflow-x: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7); /* Transparent header/footer background */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        header a, footer a {
+            color: #FFC107;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+        }
+
+        header a:hover, footer a:hover {
+            color: #FF9800;
+        }
+
+        .about-container {
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7); /* Transparent container background */
+            border-radius: 10px;
+            margin: 20px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-container h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .about-container h2 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .team-member .bio {
+            max-width: 600px;
+        }
+
+        .timeline {
+            border-left: 2px solid #FFC107;
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .timeline-item p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="https://r2.guns.lol/64f9c200-a1d9-4699-8cb1-a72cf91cefbf.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="invite.html">Invite</a>
+        <a href="about.html">About</a>
+    </header>
+
+    <div class="about-container">
+        <h1>About Ocean Ai</h1>
+        
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Ocean Ai, we are dedicated to pushing the boundaries of artificial intelligence to provide innovative and efficient solutions. Our mission is to make advanced AI accessible and useful for everyone.</p>
+        </section>
+
+        <section>
+            <h2>Meet the Team</h2>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <div class="bio">
+                    <h3>Lua</h3>
+                    <p>Founder</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="index.html">Home</a>
+        <a href="invite.html">Invite</a>
+        <a href="about.html">About</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html>
